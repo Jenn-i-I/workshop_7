@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML lang="fi">
+
+<head>
+	<meta charset="utf-8">
+	<title>Työpaja 7</title>
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="ws8">
+	<h1>Työpaja 7: JSON/XML:n parsiminen AJAXilla</h1>
+	<hr />
+	<p>Tässä harjoituksessa harjoittelemme JSONin käyttöä JavaScript-sovelluksissa. Käytä luentomateriaalia rinnalla
+		viitteenä näiden tehtävien aikana.</p>
+
+	<hr />
+	<h2>Harjoitus 1: JSONin perusteet</h2>
+	<p>JSON tarkoittaa JavaScript Object Notationia, ja se tarkoittaa, että esittelemme datan muodossa, jonka JavaScript
+		ymmärtää sellaisenaan. Muunnoksia ei tarvita sen käyttämiseen.</p>
+	<p>
+		<button id="nimiBtn">Näytä vain etu- ja sukunimi</button>
+		<button id="kaikkiBtn">Näytä kaikki tiedot</button>
+	</p>
+	
+	<div id="jsondata">JSON-data näkyy täällä.</div>
+	<hr />
+
+
+
+	<h2>Harjoitus 2: JSONin parsiminen verkosta</h2>
+	<p>Alla näet kaksi painiketta. Muokkaa lähdekoodia ja lisää näihin painikkeisiin onClick-tapahtumat. Lisää
+		toiminnallisuudet alla kuvatulla tavalla.</p>
+	<p>
+		<button id="lataaBtn">Lataa raaka data</button>
+		<button id="parsiBtn">Lataa ja parsi data</button>
+	</p>
+
+
+	<div id="rawdata">Raaka data näkyy täällä.</div>
+
+	<hr />
+	<h2>Harjoitus 3: Käytännön haaste: OpenWeatherMap API</h2>
+
+	
+	<ul>
+		<li> <button id="haeBtn">Hae data</button></li>
+
+	</ul>
+	<p>Valitse kaupunki listalta:</p>
+	<select name="mySelect" id="city" onchange="">
+		<option value="Helsinki">Helsinki</option>
+		<option value="Stockholm">Tukholma</option>
+		<option value="Rome">Rooma</option>
+		<option value="New York">New York</option>
+	</select>
+	<p>Tai kirjoita hakusana: <input id="citysearch" /><button id="search">Hae</button></p>
+	<div id="weatherdata">Säätiedot näkyvät täällä.</div>
+
+</body>
+
+</html>
